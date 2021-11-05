@@ -1,5 +1,5 @@
-# xor
-visualization for neural network of XOR 
+# XOR
+visualization for output of XOR model using DNN 
 
 ## requirement
 - tensorflow 2.x
