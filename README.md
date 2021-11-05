@@ -27,5 +27,5 @@ Arguments
 | --patience      | integer      | a number of patience, default 50                    |
 | --save_filename | string       | image filename to save, default xor.png             |
 
-## sample 
+## Example 
 ![GitHub Logo](/results/xor.png)
