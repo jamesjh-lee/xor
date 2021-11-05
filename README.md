@@ -7,6 +7,7 @@ visualization for output of XOR model using DNN
 - bcolors
 
 ## usage
+python 3.5+
 ```shell
 python3 plot_xor.py --hidden_layers 3 --units 2 --activation tanh --optimizer adam \
 --loss mae --metrics y --learning_rate 0.0001 --scheduler y --epochs 500 --patience 30 \
