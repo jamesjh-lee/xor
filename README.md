@@ -14,7 +14,7 @@ python3 plot_xor.py --hidden_layers 3 --units 2 --activation tanh --optimizer ad
 ```
 Arguments
 | argument name   |  data type   | Description                                         |
-| :----:          | :----:       | :---                                                |
+| :---            | :----:       | :---                                                |
 | --hidden_layers | integer      | a number of the hidden layers, default 2            |
 | --units         | integer      | the unit size of a Dense layer, default 2           |
 | --activation    | string       | the type of a activation function, default sigmoid  |
