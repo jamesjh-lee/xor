@@ -8,10 +8,9 @@ visualization for output of XOR model using DNN
 
 ## usage
 ```shell
-#> python3 plot_xor.py --hidden_layers 3 --units 2 \
---activation tanh --optimizer adam --loss mae --metrics y \
---learning_rate 0.0001 --scheduler y --epochs 500 \
---patience 30 --save_filename xor_1.png 
+#> python3 plot_xor.py --hidden_layers 3 --units 2 --activation tanh --optimizer adam \
+--loss mae --metrics y --learning_rate 0.0001 --scheduler y --epochs 500 --patience 30 \
+--save_filename xor_1.png 
 ```
 Arguments
 | argument name   |  data type   | Description                                         |
