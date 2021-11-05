@@ -29,4 +29,4 @@ Arguments
 
 ## sample 
 ![GitHub Logo](/results/xor.png)
-Format: ![Alt Text](url)
+Format: ![Alt Text](https://github.com/jamesjh-lee/xor/tree/main/results/xor.png)
