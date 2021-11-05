@@ -155,7 +155,6 @@ def build_output(args, weights):
 	bias = 1
 	weight = 1
 	for l in range(1, args.hidden_layers+1):
-		print(bs[l], ws[l])
 		for k in bs[l]:
 			variables['b'+str(bias)] = k
 			bias += 1
@@ -228,9 +227,11 @@ def main(args):
 		sched = LearningRateScheduler(scheduler, verbose=1)
 		callbacks.append(sched)
 	y_pred = None
+	cnt = 1
 	while acc(y_train, y_pred) != 1.0:
 		# build model
 		model = build(args)
+		print(cnt, 'built a model')
 #		model.summary()
 		
 		# compile model
@@ -239,16 +240,20 @@ def main(args):
 			model.compile(optimizer=optimizer(args.learning_rate), loss=args.loss, metrics=[acc])
 		else:		
 			model.compile(optimizer=optimizer(args.learning_rate), loss=args.loss)
+		print(cnt, 'compiled a model')
 			
+		print(cnt, 'start fitting a model')
 		hist = model.fit(x_train, y_train, epochs=args.epochs, callbacks=callbacks, verbose=0)
 		y_pred = np.where(model.predict(x_train) > 0.5, 1, 0)
-		print(hist.history['loss'][-1])
+		print(cnt, 'finished training, train loss:', hist.history['loss'][-1])
+		cnt += 1
 	
 	# check output
 	output = build_output(args, model.get_weights())
 	
 	# plot output
 	x1, x2 = symbols('x1, x2')
+	print('plotting output of a model')
 	p = plt.plot3d(output, (x1, -2, 3), (x2, -2, 3), show=False)
 	p.save(HOME+'/results/'+args.save_filename)
 	p.show()
