@@ -26,3 +26,7 @@ Arguments
 | --epochs        | integer      | a number of epoch, default 1000                     |
 | --patience      | integer      | a number of patience, default 50                    |
 | --save_filename | string       | image filename to save, default xor.png             |
+
+## sample 
+![GitHub Logo](/results/xor.png)
+Format: ![Alt Text](url)
