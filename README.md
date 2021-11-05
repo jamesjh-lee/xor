@@ -5,3 +5,7 @@ visualization for neural network of XOR
 ```shell
 #> python3 plot_xor.py
 ```
+Arguments
+| argument name | Description |
+| :----:        | :---        |
+| arg           | a           |
