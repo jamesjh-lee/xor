@@ -1,7 +1,7 @@
 # XOR
 visualization for output of XOR model using DNN 
 
-## requirement
+## requirement(python packages)
 - tensorflow 2.x
 - sympy
 - bcolors
