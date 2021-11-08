@@ -26,7 +26,7 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
       <img src="https://render.githubusercontent.com/render/math?math=w_1%2C%20w_3%20%3D%205%2C%5C%20b1%3D-8">, 
       <img src="https://render.githubusercontent.com/render/math?math=w_2%2C%20w_4%20%3D%20-7%2C%5C%20b2%3D3">, 
       <img src="https://render.githubusercontent.com/render/math?math=w_5%2C%20w_6%20%3D%20-11%2C%5C%20b2%3D6">
-- <img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20%5Csigmoid(-11*%5Csigmoid(5x_1%2B5x_2-8)%20-11*%5Csigmoid(-7x_1-7x_2%2B3)%20%2B%206)%20%20">
+**<img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20%5Csigmoid(-11*%5Csigmoid(5x_1%2B5x_2-8)%20-11*%5Csigmoid(-7x_1-7x_2%2B3)%20%2B%206)%20%20">**
 
 - <img src="https://render.githubusercontent.com/render/math?math=x_1%3D0%2C%5C%20x_2%3D0%20%5CRightarrow%20%5Csigmoid(-11*%5Csigmoid(5*0%2B5*0-8)%20-11*%5Csigmoid(-7*0-7*0%2B3)%20%2B%206)">
    <img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-11*%5Csigmoid(-8)%20-%2011*%5Csigmoid(3)%2B6)">
