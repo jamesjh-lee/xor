@@ -28,3 +28,8 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
 
 | <img src="https://render.githubusercontent.com/render/math?math=x_1"> | <img src="https://render.githubusercontent.com/render/math?math=x_2"> | <img src="https://render.githubusercontent.com/render/math?math=y_1"> | <img src="https://render.githubusercontent.com/render/math?math=y_2"> | <img src="https://render.githubusercontent.com/render/math?math=\bar y"> | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
+
