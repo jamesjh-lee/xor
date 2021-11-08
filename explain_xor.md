@@ -62,3 +62,14 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
 | 1 | 0 | 0 | 0 | 1 | 1 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
+## Plot a output
+# sigmoid function
+```python
+from sympy import *
+from sympy.plotting import plot
+x = symbols('x')
+sigmoid = symbols('sigmoid', cls=Function)
+sigmoid = 1 / (1+exp(-x))
+id, (x, -5, 5))
+```
+plot(sigmo![image](https://user-images.githubusercontent.com/93747285/140710128-13b7b2c0-3fdf-4798-a672-d215e6d6a8f2.png)
