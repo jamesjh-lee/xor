@@ -32,10 +32,10 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20%5Csigmoid(-11*%5Csigmoid(5x_1%2B5x_2-8)%20-11*%5Csigmoid(-7x_1-7x_2%2B3)%20%2B%206)%20%20">
 
 - <img src="https://render.githubusercontent.com/render/math?math=x_1%3D0%2C%5C%20x_2%3D0%20%5CRightarrow%20%5Csigmoid(-11*%5Csigmoid(5*0%2B5*0-8)%20-11*%5Csigmoid(-7*0-7*0%2B3)%20%2B%206)">
-> <img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-11*%5Csigmoid(-8)%20-%2011*%5Csigmoid(3)%2B6)">
-> <img src="https://render.githubusercontent.com/render/math?math=%5Capprox%20%5Csigmoid(-11*0%20-%2011*1%2B6)">
-> <img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-5)%20%5Capprox%200%2C">
-> <img src="https://render.githubusercontent.com/render/math?math=L_%7B11%7D%3D%5Csigmoid(-8)%2C%5C%20L_%7B12%7D%3D%5Csigmoid(3)">
+:<img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-11*%5Csigmoid(-8)%20-%2011*%5Csigmoid(3)%2B6)">
+:<img src="https://render.githubusercontent.com/render/math?math=%5Capprox%20%5Csigmoid(-11*0%20-%2011*1%2B6)">
+:<img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-5)%20%5Capprox%200%2C">
+:<img src="https://render.githubusercontent.com/render/math?math=L_%7B11%7D%3D%5Csigmoid(-8)%2C%5C%20L_%7B12%7D%3D%5Csigmoid(3)">
 
 - <img src="https://render.githubusercontent.com/render/math?math=x_1%3D0%2C%5C%20x_2%3D1%20%5CRightarrow%20%5Csigmoid(-11*%5Csigmoid(5*0%2B5*1-8)%20-11*%5Csigmoid(-7*0-7*1%2B3)%20%2B%206)">
 <img src="https://render.githubusercontent.com/render/math?math=%3D%20%5Csigmoid(-11*%5Csigmoid(-3)%20-%2011*%5Csigmoid(-4)%2B6)">
