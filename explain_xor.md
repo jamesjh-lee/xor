@@ -74,6 +74,7 @@ plot(sigmoid, (x, -5, 5))
 ```
 ![image](https://user-images.githubusercontent.com/93747285/140710128-13b7b2c0-3fdf-4798-a672-d215e6d6a8f2.png)
 
+### output of the DNN model
 ```python
 from sympy import *
 from sympy.plotting import plot3d
