@@ -80,5 +80,9 @@ from sympy.plotting import plot3d
 x1, x2, t = symbols('x1 x2 t')
 sigmoid = symbols('sigmoid', cls=Function)
 sigmoid = 1 / (1+exp(-t))
-
+output = sigmoid.subs(t, -11*sigmoid.subs(t, 5*x1+5*x2-8)-11*sigmoid.subs(t, -7*x1-7*x2+3)+6)
+plot3d(output, (x1, -2, 3), (x2, -2, 3))
 ```
+![image](https://user-images.githubusercontent.com/93747285/140711805-33df7fe8-e976-4127-84da-e1cfda231b07.png)
+
+
