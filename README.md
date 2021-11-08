@@ -13,6 +13,9 @@ python3 plot_xor.py --hidden_layers 3 --units 2 --activation tanh --optimizer ad
 --loss mae --metrics y --learning_rate 0.0001 --scheduler y --epochs 500 --patience 30 \
 --save_filename xor_1.png 
 ```
+Warn: recommend units <= 128 and hidden_layers <= 12 
+required much of computing resource
+
 Arguments
 | argument name   |  data type   | Description                                         |
 | :---            | :----:       | :---                                                |
