@@ -26,5 +26,5 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
       <img src="https://render.githubusercontent.com/render/math?math=w_5%2C%20w_6%20%3D%20-11%2C%5C%20b2%3D6">
 - <img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20%5Csigmoid(-11*%5Csigmoid(5x_1%2B5x_2-8)%20-11*%5Csigmoid(-7x_1-7x_2%2B3)%20%2B%206)%20%20">
 
-| x1 | x2 | y1 | y2 | \bar y | XOR |
+| <img src="https://render.githubusercontent.com/render/math?math=x_1"> | <img src="https://render.githubusercontent.com/render/math?math=x_2"> | <img src="https://render.githubusercontent.com/render/math?math=y_1"> | <img src="https://render.githubusercontent.com/render/math?math=y_2"> | <img src="https://render.githubusercontent.com/render/math?math=\bar y"> | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
