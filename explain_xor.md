@@ -63,13 +63,22 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## Plot a output
-# sigmoid function
+### sigmoid function
 ```python
 from sympy import *
 from sympy.plotting import plot
 x = symbols('x')
 sigmoid = symbols('sigmoid', cls=Function)
 sigmoid = 1 / (1+exp(-x))
-id, (x, -5, 5))
+plot(sigmoid, (x, -5, 5))
 ```
-plot(sigmo![image](https://user-images.githubusercontent.com/93747285/140710128-13b7b2c0-3fdf-4798-a672-d215e6d6a8f2.png)
+![image](https://user-images.githubusercontent.com/93747285/140710128-13b7b2c0-3fdf-4798-a672-d215e6d6a8f2.png)
+
+```python
+from sympy import *
+from sympy.plotting import plot3d
+x1, x2, t = symbols('x1 x2 t')
+sigmoid = symbols('sigmoid', cls=Function)
+sigmoid = 1 / (1+exp(-t))
+
+```
