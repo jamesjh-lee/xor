@@ -14,6 +14,7 @@ python3 plot_xor.py --hidden_layers 3 --units 2 --activation tanh --optimizer ad
 --save_filename xor_1.png 
 ```
 Warn: recommend units <= 128 and hidden_layers <= 12
+
 required much of computing resource
 
 Arguments
