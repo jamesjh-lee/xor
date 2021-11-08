@@ -16,8 +16,9 @@ Let's assume that a DNN model has two layer and nonlinear activation function.
 The DNN model is as below the figure.
 
 ## DNN Model
-DNN model has two layers(hidden layer and output layer)
 (reference: https://hunkim.github.io/ml/lec9.pdf)
+
+DNN model has two layers(hidden layer and output layer)
 
 <img width="1556" alt="image" src="https://user-images.githubusercontent.com/93747285/140699567-b56a8071-c5c8-4d86-aa85-f294a273882f.png">
 
