@@ -1,5 +1,5 @@
 # XOR
-XOR(Exclusive OR) gate is a digital logic gate that gives a true output when the number of true inputs is odd.
+XOR(Exclusive OR) gate is a digital logic gate that gives a true output when the number of true inputs is odd. (wikipedia)
 
 | A | B | A XOR B |
 | :-: | :-: | :-: |
