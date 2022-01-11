@@ -1,5 +1,5 @@
 # XOR
-visualization for output of XOR model using DNN 
+plot a output of XOR model using DNN
 
 ## requirements (python packages)
 - tensorflow 2.x
