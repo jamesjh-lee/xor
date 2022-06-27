@@ -15,7 +15,6 @@ XOR gate is working as below:
 Basically to solve XOR problem, it is essential that nonlinaerity and many of layers are core in a DNN model.
 
 Let's assume that a DNN model has two layer and nonlinear activation function.
-
 The DNN model is as below the figure.
 
 ## DNN Model
@@ -25,27 +24,27 @@ DNN model has two layers(hidden layer and output layer)
 
 <img width="1633" alt="image" src="https://user-images.githubusercontent.com/93747285/140840664-b8010a80-70a9-4ee8-abd5-d81bfd1b7e79.png">
 
-- <img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20f(H*W_3%20%2B%20b_3)%20%3D%20f(%5Cbegin%7Bbmatrix%7D%20h_1%20%26%20h_2%20%5Cend%7Bbmatrix%7D%20*%20%5Cbegin%7Bbmatrix%7D%20w_5%20%5C%5C%20w_6%20%5Cend%7Bbmatrix%7D%20%2B%20b_3)%20%3D%0Af(w_5*h_1%20%2B%20w_6*h_2%20%2B%20b_3)%3Df(w_5*f(w_1*x_1%20%2B%20w_3*x_2%20%2B%20b_1)%2Bw_6*f(w_2*x_1%20%2B%20w_4*x_2%20%2B%20b_2)%20%2B%20b_3)">
+- $\bar y = f(H*W + b_3) = f(\begin{bmatrix}h_1 & h_2 \end{bmatrix} * \begin{bmatrix} w_5 \\ w_6 \end{bmatrix})=f( w_5 * h_1 + w_6 * h_2 + b_3 )=f(w_5 * f(w_1 * x_1 + w_3 * x_2 + b_1) + w_6 * f(w_2 * x_1 + w_4 * x_2 + b_2) + b_3 )$
 
 ## Assign parameters
-When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20%5Csigmoid">, 
-      <img src="https://render.githubusercontent.com/render/math?math=w_1%2C%20w_3%20%3D%205%2C%5C%20b1%3D-8">, 
-      <img src="https://render.githubusercontent.com/render/math?math=w_2%2C%20w_4%20%3D%20-7%2C%5C%20b2%3D3">, 
-      <img src="https://render.githubusercontent.com/render/math?math=w_5%2C%20w_6%20%3D%20-11%2C%5C%20b2%3D6">
-<img src="https://render.githubusercontent.com/render/math?math=%5Cbar%20y%20%3D%20%5Csigmoid(-11*%5Csigmoid(5x_1%2B5x_2-8)%20-11*%5Csigmoid(-7x_1-7x_2%2B3)%20%2B%206)%20%20">
+When $f = sigmoid,\ w_1,\ w_3=5,\ b_1=-8,\ w_2,\ w_4=-7,\ b_2=3,\ b_3=6 $ \
+$\bar y = sigmoid(-11 * sigmoid(5x_1+5x_2-8)-11*sigmoid(-7x_1-7x_2+3)+6)$
 
-- <img width="174" alt="image" src="https://user-images.githubusercontent.com/93747285/140844231-492f27d3-ad8f-448d-98bf-8e9caf0616b4.png">
-<img width="1259" alt="image" src="https://user-images.githubusercontent.com/93747285/140844252-7e1e83aa-fa11-4ed7-a4ce-2e795f49b5a9.png">
+- $x_1=0,\ x_2=0$ \
+$ sigmoid( -11 * sigmoid(5 \times 0 + 5 \times 0 - 8)- 11 * sigmoid(-7 \times 0 - 7 \times 0 + 3) + 6 )$ \
+$sigmoid(-11 * sigmoid(-8)- 11 * sigmoid(3)+6) \approx sigmoid(-11 \times 0 - 11 \times 1 + 6) = sigmoid(-5) \approx 0$
 
-- <img width="174" alt="image" src="https://user-images.githubusercontent.com/93747285/140844629-cf33166c-0f3b-47a1-a91b-6732b4e19851.png">
-<img width="1261" alt="image" src="https://user-images.githubusercontent.com/93747285/140844639-4e2296b8-2150-4b32-89da-3b230a93690a.png">
+- $x_1=0,\ x_2=1$ \
+$ sigmoid( -11 * sigmoid(5 \times 0 + 5 \times 1 - 8)- 11 * sigmoid(-7 \times 0 - 7 \times 1 + 3) + 6 )$ \
+$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$
 
-- <img width="174" alt="image" src="https://user-images.githubusercontent.com/93747285/140844765-3b858d74-f575-47aa-9f06-034b2ba228fd.png">
-<img width="1255" alt="image" src="https://user-images.githubusercontent.com/93747285/140844779-bcd632fa-e34b-4f32-bbb1-88d75495462c.png">
+- $x_1=1,\ x_2=0$ \
+$ sigmoid( -11 * sigmoid(5 \times 1 + 5 \times 0 - 8)- 11 * sigmoid(-7 \times 1 - 7 \times 0 + 3) + 6 )$ \
+$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$
 
-- <img width="174" alt="image" src="https://user-images.githubusercontent.com/93747285/140845037-a855d7b5-fded-4d7b-95fc-ac31c195d323.png">
-<img width="1268" alt="image" src="https://user-images.githubusercontent.com/93747285/140845089-f07f6ab1-f7a7-4ba6-8ba8-41f68fec4ccb.png">
-
+- $x_1=1,\ x_2=1$ \
+$ sigmoid( -11 * sigmoid(5 \times 1 + 5 \times 1 - 8)- 11 * sigmoid(-7 \times 1 - 7 \times 1 + 3) + 6 )$ \
+$sigmoid(-11 * sigmoid(2)- 11 * sigmoid(-11) + 6) \approx sigmoid(-11 \times 1 - 11 \times 0 + 6) = sigmoid(-5) \approx 0$ 
 
 | $x_{1}$ | $x_{2}$ | $L_{11}$ | $L_{12}$ | $\bar y$ | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
