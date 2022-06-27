@@ -24,7 +24,7 @@ DNN model has two layers(hidden layer and output layer)
 
 <img width="1633" alt="image" src="https://user-images.githubusercontent.com/93747285/140840664-b8010a80-70a9-4ee8-abd5-d81bfd1b7e79.png">
 
-- $\bar y = f(H*W + b_3) = f( \begin{bmatrix}h_1 & h_2 \end{bmatrix} * \begin{bmatrix} w_5 \\\\ w_6 \end{bmatrix} ) = f( w_5 * h_1 + w_6 * h_2 + b_3 )=f(w_5 * f(w_1 * x_1 + w_3 * x_2 + b_1) + w_6 * f(w_2 * x_1 + w_4 * x_2 + b_2) + b_3 )$ 
+- $\bar y = f(H*W + b_3) = f( \begin{bmatrix}L_{11} & L_{12} \end{bmatrix} * \begin{bmatrix} w_5 \\\\ w_6 \end{bmatrix} ) = f( w_5 * f(h_1) + w_6 * f(h_2) + b_3 )=f(w_5 * f(w_1 * x_1 + w_3 * x_2 + b_1) + w_6 * f(w_2 * x_1 + w_4 * x_2 + b_2) + b_3 )$ 
 
 ## Assign parameters
 When $f = sigmoid,\ w_1,\ w_3=5,\ b_1=-8,\ w_2,\ w_4=-7,\ b_2=3,\ b_3=6 $ \
