@@ -48,10 +48,10 @@ $sigmoid(-11 * sigmoid(2)- 11 * sigmoid(-11) + 6) \approx sigmoid(-11 \times 1 -
 
 | $x_{1}$ | $x_{2}$ | $L_{11}$ | $L_{12}$ | $\bar y$ | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 1 | $sigmoid(-5)=0$ | 0 |
-| 0 | 1 | 0 | 0 | $sigmoid(6)=1$ | 1 |
-| 1 | 0 | 0 | 0 | $sigmoid(6)=1$ | 1 |
-| 1 | 1 | 1 | 0 | $sigmoid(-5)=0$ | 0 |
+| 0 | 0 | 0 | 1 | $sigmoid(-5) \approx 0$ | 0 |
+| 0 | 1 | 0 | 0 | $sigmoid(6) \approx 1$ | 1 |
+| 1 | 0 | 0 | 0 | $sigmoid(6) \approx 1$ | 1 |
+| 1 | 1 | 1 | 0 | $sigmoid(-5) \approx 0$ | 0 |
 ## Plot a output
 ### sigmoid function
 ```python
