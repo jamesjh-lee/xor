@@ -57,10 +57,10 @@ $*\ L_{11} = sigmoid(2),\ L_{12}=sigmoid(-11)$
 
 | $x_{1}$ | $x_{2}$ | $L_{11}$ | $L_{12}$ | $\bar y$ | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 1 | $sigmoid(-5) \approx 0$ | 0 |
-| 0 | 1 | 0 | 0 | $sigmoid(6) \approx 1$ | 1 |
-| 1 | 0 | 0 | 0 | $sigmoid(6) \approx 1$ | 1 |
-| 1 | 1 | 1 | 0 | $sigmoid(-5) \approx 0$ | 0 |
+| 0 | 0 | $sigmoid(-8)\aprox 0$ | $sigmoid(3)\aprox 1$ | $sigmoid(-5) \approx 0$ | 0 |
+| 0 | 1 | $sigmoid(-3)\aprox 0$ | $sigmoid(-4)\aprox 0$ | $sigmoid(6) \approx 1$ | 1 |
+| 1 | 0 | $sigmoid(-3)\aprox 0$ | $sigmoid(-4)\aprox 0$ | $sigmoid(6) \approx 1$ | 1 |
+| 1 | 1 | $sigmoid(2)\aprox 1$ | $sigmoid(-11)\aprox 0$ | $sigmoid(-5) \approx 0$ | 0 |
 
 ## Plot a output
 ### sigmoid function
