@@ -1,3 +1,4 @@
+
 # XOR
 
 XOR(Exclusive OR) gate is a digital logic gate that gives a true output when the number of true inputs is odd. (wikipedia)
@@ -46,7 +47,7 @@ When  <img src="https://render.githubusercontent.com/render/math?math=f%20%3D%20
 <img width="1268" alt="image" src="https://user-images.githubusercontent.com/93747285/140845089-f07f6ab1-f7a7-4ba6-8ba8-41f68fec4ccb.png">
 
 
-| <img src="https://render.githubusercontent.com/render/math?math=x_1"> | <img src="https://render.githubusercontent.com/render/math?math=x_2"> | <img src="https://render.githubusercontent.com/render/math?math=L_{11}"> | <img src="https://render.githubusercontent.com/render/math?math=L_{12}"> | <img src="https://render.githubusercontent.com/render/math?math=\bar y"> | XOR |
+| $x_{1}$ | $x_{2}$ | $L_{11}$ | $L_{12}$ | $\bar y$ | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 0 | 1 | 0 | 0 | 1 | 1 |
