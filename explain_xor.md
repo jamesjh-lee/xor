@@ -32,19 +32,23 @@ $\bar y = sigmoid(-11 * sigmoid(5x_1+5x_2-8)-11*sigmoid(-7x_1-7x_2+3)+6)$
 
 - $x_1=0,\ x_2=0$ \
 $ sigmoid( -11 * sigmoid(5 \times 0 + 5 \times 0 - 8)- 11 * sigmoid(-7 \times 0 - 7 \times 0 + 3) + 6 )$ \
-$sigmoid(-11 * sigmoid(-8)- 11 * sigmoid(3)+6) \approx sigmoid(-11 \times 0 - 11 \times 1 + 6) = sigmoid(-5) \approx 0$
+$sigmoid(-11 * sigmoid(-8)- 11 * sigmoid(3)+6) \approx sigmoid(-11 \times 0 - 11 \times 1 + 6) = sigmoid(-5) \approx 0$ \
+* $L_{11} = sigmoid(-8),\ L_{12}=sigmoid(3)$
 
 - $x_1=0,\ x_2=1$ \
 $ sigmoid( -11 * sigmoid(5 \times 0 + 5 \times 1 - 8)- 11 * sigmoid(-7 \times 0 - 7 \times 1 + 3) + 6 )$ \
-$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$
+$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$ \
+* $L_{11} = sigmoid(-3),\ L_{12}=sigmoid(-4)$
 
 - $x_1=1,\ x_2=0$ \
 $ sigmoid( -11 * sigmoid(5 \times 1 + 5 \times 0 - 8)- 11 * sigmoid(-7 \times 1 - 7 \times 0 + 3) + 6 )$ \
-$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$
+$sigmoid(-11 * sigmoid(-3)- 11 * sigmoid(-4) + 6) \approx sigmoid(-11 \times 0 - 11 \times 0 + 6) = sigmoid(6) \approx 1$ \
+* $L_{11} = sigmoid(-3),\ L_{12}=sigmoid(-4)$
 
 - $x_1=1,\ x_2=1$ \
 $ sigmoid( -11 * sigmoid(5 \times 1 + 5 \times 1 - 8)- 11 * sigmoid(-7 \times 1 - 7 \times 1 + 3) + 6 )$ \
-$sigmoid(-11 * sigmoid(2)- 11 * sigmoid(-11) + 6) \approx sigmoid(-11 \times 1 - 11 \times 0 + 6) = sigmoid(-5) \approx 0$ 
+$sigmoid(-11 * sigmoid(2)- 11 * sigmoid(-11) + 6) \approx sigmoid(-11 \times 1 - 11 \times 0 + 6) = sigmoid(-5) \approx 0$ \
+* $L_{11} = sigmoid(2),\ L_{12}=sigmoid(-11)$
 
 | $x_{1}$ | $x_{2}$ | $L_{11}$ | $L_{12}$ | $\bar y$ | XOR |
 | :-: | :-: | :-: | :-: | :-: | :-: |
