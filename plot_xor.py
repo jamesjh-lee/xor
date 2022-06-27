@@ -11,7 +11,7 @@ from tensorflow.compat.v1.keras.callbacks import EarlyStopping, LearningRateSche
 from tensorflow.compat.v1.keras import backend as K
 from tensorflow.compat.v1 import Session, ConfigProto, GPUOptions, get_default_graph, global_variables_initializer
 import tensorflow as tf
-from bcolors import *
+#from bcolors import *
 from utils import *
 from sympy import *
 import sympy.plotting as plt
